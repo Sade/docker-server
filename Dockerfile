@@ -26,7 +26,7 @@ EXPOSE 80 443
 VOLUME ["/var/www", "/var/log/apache2", "/etc/apache2"]
 
 # Copy this repo into place.
-ADD --chown=www-data www /var/www/default
+ADD www /var/www/default
 
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
