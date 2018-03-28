@@ -1,0 +1,1 @@
+docker build --add-host="georges.designdo.fr:192.168.1.1" --add-host="alfred.o-agence.fr:192.168.1.2" .
